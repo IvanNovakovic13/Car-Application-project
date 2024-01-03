@@ -18,6 +18,7 @@ namespace Car_Management_System
             panelSlide.Height = btnZaposleni.Height;
             panelSlide.Top = btnZaposleni.Top;
         }
+
         private void btnKupci_Click(object sender, EventArgs e)
         {
             panelSlide.Height = btnKupci.Height;
@@ -35,11 +36,13 @@ namespace Car_Management_System
             panelSlide.Height = btnPlacanje.Height;
             panelSlide.Top = btnPlacanje.Top;
         }
+
         private void btnPrijava_Click(object sender, EventArgs e)
         {
             panelSlide.Height = btnPrijava.Height;
             panelSlide.Top = btnPrijava.Top;
         }
+
         private void btnPodesavanja_Click(object sender, EventArgs e)
         {
             panelSlide.Height = btnPodesavanja.Height;

@@ -62,7 +62,7 @@
             lbl1 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            panelChild = new Panel();
+            panelDete = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panelLogo.SuspendLayout();
@@ -285,7 +285,7 @@
             panel3.Controls.Add(panel6);
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(panelChild);
+            panel3.Controls.Add(panelDete);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(200, 0);
             panel3.Name = "panel3";
@@ -481,13 +481,13 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // panelChild
+            // panelDete
             // 
-            panelChild.BackColor = SystemColors.ButtonHighlight;
-            panelChild.Location = new Point(59, 262);
-            panelChild.Name = "panelChild";
-            panelChild.Size = new Size(960, 450);
-            panelChild.TabIndex = 3;
+            panelDete.BackColor = SystemColors.ButtonHighlight;
+            panelDete.Location = new Point(59, 262);
+            panelDete.Name = "panelDete";
+            panelDete.Size = new Size(960, 450);
+            panelDete.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -528,7 +528,7 @@
         private Panel panel2;
         private Panel panelLogo;
         private Panel panel3;
-        private Panel panelChild;
+        private Panel panelDete;
         private Button btnDashboard;
         private Button btnLogout;
         private Button btnPodesavanja;

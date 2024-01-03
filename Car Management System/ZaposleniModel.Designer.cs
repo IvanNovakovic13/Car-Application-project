@@ -1,6 +1,6 @@
 ﻿namespace Car_Management_System
 {
-    partial class EmployeeModule
+    partial class dgvZaposleniModel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeModule));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dgvZaposleniModel));
             panel1 = new Panel();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
+            lblSifra = new Label();
             label7 = new Label();
             label8 = new Label();
             dtRodjenja = new DateTimePicker();
@@ -114,15 +114,15 @@
             label5.TabIndex = 4;
             label5.Text = "Zarada:";
             // 
-            // label6
+            // lblSifra
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(12, 393);
-            label6.Name = "label6";
-            label6.Size = new Size(55, 28);
-            label6.TabIndex = 5;
-            label6.Text = "Sifra:";
+            lblSifra.AutoSize = true;
+            lblSifra.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSifra.Location = new Point(12, 393);
+            lblSifra.Name = "lblSifra";
+            lblSifra.Size = new Size(55, 28);
+            lblSifra.TabIndex = 5;
+            lblSifra.Text = "Sifra:";
             // 
             // label7
             // 
@@ -185,6 +185,7 @@
             comboBoxUloga.Name = "comboBoxUloga";
             comboBoxUloga.Size = new Size(854, 28);
             comboBoxUloga.TabIndex = 12;
+            comboBoxUloga.SelectedIndexChanged += comboBoxUloga_SelectedIndexChanged;
             // 
             // txtBoxZarada
             // 
@@ -192,6 +193,7 @@
             txtBoxZarada.Name = "txtBoxZarada";
             txtBoxZarada.Size = new Size(482, 27);
             txtBoxZarada.TabIndex = 13;
+            txtBoxZarada.KeyPress += txtBoxZarada_KeyPress_1;
             // 
             // label9
             // 
@@ -289,7 +291,7 @@
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
             // 
-            // EmployeeModule
+            // dgvZaposleniModel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -311,7 +313,7 @@
             Controls.Add(dtRodjenja);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(label6);
+            Controls.Add(lblSifra);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -319,7 +321,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "EmployeeModule";
+            Name = "dgvZaposleniModel";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -333,23 +335,23 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Label label6;
+        private Label lblSifra;
         private Label label7;
         private Label label8;
-        private DateTimePicker dtRodjenja;
-        private TextBox txtBoxAdresa;
-        private TextBox txtBoxTelefon;
-        private TextBox txtBoxImeIPrezime;
-        private ComboBox comboBoxUloga;
-        private TextBox txtBoxZarada;
         private Label label9;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private TextBox txtBoxSifra;
-        private Button btnSave;
-        private Button btnUpdate;
-        private Button btnCancel;
-        private Label lblEid;
         private Button btnClose;
+        public Label lblEid;
+        public DateTimePicker dtRodjenja;
+        public TextBox txtBoxAdresa;
+        public TextBox txtBoxTelefon;
+        public TextBox txtBoxImeIPrezime;
+        public ComboBox comboBoxUloga;
+        public TextBox txtBoxZarada;
+        public RadioButton radioButton1;
+        public RadioButton radioButton2;
+        public TextBox txtBoxSifra;
+        public Button btnSave;
+        public Button btnUpdate;
+        public Button btnCancel;
     }
 }
