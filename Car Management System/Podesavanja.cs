@@ -10,12 +10,14 @@ namespace Car_Management_System
         dbconnect dbcon = new dbconnect();
         SqlDataReader dr;
         String naslov = "Sistem za automobile";
+        bool imaPodatke = false;
 
         public Podesavanja()
         {
             InitializeComponent();
             ucitajVozilo();
             ucitajCenuUsluge();
+            UcitajKompaniju();
         }
 
         #region TipVozila
@@ -24,7 +26,7 @@ namespace Car_Management_System
             ucitajVozilo();
         }
 
-        private void dgvTipVozila_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvTipVozila_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvTipVozila.Columns[e.ColumnIndex].Name;
             if (colName == "EditTipVozila")
@@ -119,6 +121,12 @@ namespace Car_Management_System
             ucitajCenuUsluge();
         }
 
+        private void btnAddVozilo_Click(object sender, EventArgs e)
+        {
+            UpravljajVozilom tip = new UpravljajVozilom(this);
+            tip.btnUpdate.Enabled = false;
+            tip.ShowDialog();
+        }
         private void dgvCenaUsluge_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvCenaUsluge.Columns[e.ColumnIndex].Name;
@@ -167,11 +175,67 @@ namespace Car_Management_System
         }
         #endregion CenaUsluge
 
-        private void btnAddVozilo_Click(object sender, EventArgs e)
+        #region PodaciOKompaniji
+        public void UcitajKompaniju()
         {
-            UpravljajVozilom tip = new UpravljajVozilom(this);
-            tip.btnUpdate.Enabled = false;
-            tip.ShowDialog();
+            try
+            {
+                dbcon.open();
+                cm = new SqlCommand("Select * from Kompanija", dbcon.connect());
+                dr = cm.ExecuteReader();
+                dr.Read();
+                if (dr.HasRows)
+                {
+                    imaPodatke = true;
+                    txtBoxNazivKompanije.Text = dr["ime"].ToString();
+                    txtBoxAdresaKompanije.Text = dr["adresa"].ToString();
+                }
+                else
+                {
+                    txtBoxNazivKompanije.Clear();
+                    txtBoxAdresaKompanije.Clear();
+                }
+                dr.Close();
+                dbcon.close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, naslov);
+            }
+
+
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Sačuvaj podatke o kompaniji?", "Potvrda", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (imaPodatke)
+                    {
+                        dbcon.ExcecuteQuerry("UPDATE kompanija SET ime ='" + txtBoxNazivKompanije.Text + "', adresa='" + txtBoxAdresaKompanije.Text + "'");
+                    }
+                    else
+                    {
+                        dbcon.ExcecuteQuerry("INSERT INTO kompanija (ime, adresa) values('" + txtBoxNazivKompanije.Text + "', '" + txtBoxAdresaKompanije.Text + "')");
+                    }
+                    MessageBox.Show("Podaci o kompaniji su uspešno sačuvani", "Čuvanje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, naslov);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtBoxAdresaKompanije.Clear();
+            txtBoxNazivKompanije.Clear();
+        }
+        #endregion PodaciOKompaniji
+
+       
     }
 }

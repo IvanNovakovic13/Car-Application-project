@@ -41,7 +41,6 @@
             txtBoxCenaUsluge = new TextBox();
             label2 = new Label();
             dgvCenaUsluge = new DataGridView();
-            tabPage3 = new TabPage();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             imeUsluge = new DataGridViewTextBoxColumn();
@@ -49,6 +48,13 @@
             cenaUsluge = new DataGridViewTextBoxColumn();
             EditCenaUsluge = new DataGridViewImageColumn();
             DeleteCenaUsluge = new DataGridViewImageColumn();
+            tabPage3 = new TabPage();
+            btnCancel = new Button();
+            btnSave = new Button();
+            txtBoxAdresaKompanije = new TextBox();
+            label4 = new Label();
+            txtBoxNazivKompanije = new TextBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvTipVozila).BeginInit();
             tabCenaUsluge.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -56,6 +62,7 @@
             tabPage2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCenaUsluge).BeginInit();
+            tabPage3.SuspendLayout();
             SuspendLayout();
             // 
             // dgvTipVozila
@@ -96,6 +103,7 @@
             dgvTipVozila.RowTemplate.Height = 29;
             dgvTipVozila.Size = new Size(936, 362);
             dgvTipVozila.TabIndex = 7;
+            dgvTipVozila.CellContentClick += dgvTipVozila_CellContentClick_1;
             // 
             // Column1
             // 
@@ -307,16 +315,6 @@
             dgvCenaUsluge.TabIndex = 8;
             dgvCenaUsluge.CellContentClick += dgvCenaUsluge_CellContentClick;
             // 
-            // tabPage3
-            // 
-            tabPage3.Location = new Point(4, 29);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(942, 447);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Naziv kompanije";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -373,6 +371,76 @@
             DeleteCenaUsluge.Name = "DeleteCenaUsluge";
             DeleteCenaUsluge.Width = 6;
             // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(btnCancel);
+            tabPage3.Controls.Add(btnSave);
+            tabPage3.Controls.Add(txtBoxAdresaKompanije);
+            tabPage3.Controls.Add(label4);
+            tabPage3.Controls.Add(txtBoxNazivKompanije);
+            tabPage3.Controls.Add(label3);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(942, 447);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Naziv kompanije";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            btnCancel.BackColor = Color.FromArgb(192, 0, 0);
+            btnCancel.Location = new Point(620, 290);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(161, 53);
+            btnCancel.TabIndex = 42;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
+            // 
+            // btnSave
+            // 
+            btnSave.BackColor = Color.FromArgb(128, 255, 255);
+            btnSave.Location = new Point(435, 290);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(161, 53);
+            btnSave.TabIndex = 41;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
+            // 
+            // txtBoxAdresaKompanije
+            // 
+            txtBoxAdresaKompanije.Location = new Point(281, 195);
+            txtBoxAdresaKompanije.Name = "txtBoxAdresaKompanije";
+            txtBoxAdresaKompanije.Size = new Size(500, 27);
+            txtBoxAdresaKompanije.TabIndex = 3;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(127, 198);
+            label4.Name = "label4";
+            label4.Size = new Size(134, 20);
+            label4.TabIndex = 2;
+            label4.Text = "Adresa Kompanije:";
+            // 
+            // txtBoxNazivKompanije
+            // 
+            txtBoxNazivKompanije.Location = new Point(281, 142);
+            txtBoxNazivKompanije.Name = "txtBoxNazivKompanije";
+            txtBoxNazivKompanije.Size = new Size(500, 27);
+            txtBoxNazivKompanije.TabIndex = 1;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(127, 145);
+            label3.Name = "label3";
+            label3.Size = new Size(125, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Naziv Kompanije:";
+            // 
             // Podesavanja
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -391,6 +459,8 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCenaUsluge).EndInit();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -422,5 +492,11 @@
         private DataGridViewTextBoxColumn cenaUsluge;
         private DataGridViewImageColumn EditCenaUsluge;
         private DataGridViewImageColumn DeleteCenaUsluge;
+        private Label label3;
+        private Label label4;
+        public Button btnCancel;
+        public Button btnSave;
+        public TextBox txtBoxNazivKompanije;
+        public TextBox txtBoxAdresaKompanije;
     }
 }

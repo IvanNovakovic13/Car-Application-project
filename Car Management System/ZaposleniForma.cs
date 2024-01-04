@@ -22,6 +22,7 @@ namespace Car_Management_System
         {
             InitializeComponent();
             ucitajZaposlene();
+            dbcon = new dbconnect();
         }
 
         private void txtBoxPretraga_TextChanged(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace Car_Management_System
 
         #endregion Metode
 
-        private void dgvZaposleni_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvZaposleni_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvZaposleni.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")

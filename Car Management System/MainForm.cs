@@ -17,6 +17,7 @@ namespace Car_Management_System
         {
             panelSlide.Height = btnZaposleni.Height;
             panelSlide.Top = btnZaposleni.Top;
+            openChildForm(new ZaposleniForma());
         }
 
         private void btnKupci_Click(object sender, EventArgs e)
@@ -47,6 +48,7 @@ namespace Car_Management_System
         {
             panelSlide.Height = btnPodesavanja.Height;
             panelSlide.Top = btnPodesavanja.Top;
+            openChildForm(new Podesavanja());
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -54,5 +56,28 @@ namespace Car_Management_System
             panelSlide.Height = btnLogout.Height;
             panelSlide.Top = btnLogout.Top;
         }
+
+        #region Metoda
+        // Metoda za bilo koju formu u PanelDete na mainFormi
+
+        private Form AktivnaForma = null;
+
+        public void openChildForm(Form DeteForma)
+        {
+            if (AktivnaForma != null)
+            {
+                AktivnaForma.Close();
+            }
+
+            AktivnaForma = DeteForma;
+            DeteForma.TopLevel = false;
+            DeteForma.FormBorderStyle = FormBorderStyle.None;
+            DeteForma.Dock = DockStyle.Fill;
+            panelDete.Controls.Add(DeteForma);
+            panelDete.Tag = DeteForma;
+            DeteForma.BringToFront();
+            DeteForma.Show();
+        }
+        #endregion Metoda
     }
 }

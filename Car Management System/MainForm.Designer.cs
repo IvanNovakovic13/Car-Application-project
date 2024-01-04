@@ -85,7 +85,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(10, 734);
+            panel1.Size = new Size(10, 773);
             panel1.TabIndex = 0;
             // 
             // panelSlide
@@ -110,7 +110,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(10, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(190, 734);
+            panel2.Size = new Size(190, 773);
             panel2.TabIndex = 1;
             // 
             // btnLogout
@@ -121,7 +121,7 @@
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogout.Location = new Point(0, 684);
+            btnLogout.Location = new Point(0, 723);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(190, 50);
             btnLogout.TabIndex = 7;
@@ -285,7 +285,6 @@
             panel3.Controls.Add(panel6);
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(panelDete);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(200, 0);
             panel3.Name = "panel3";
@@ -484,7 +483,7 @@
             // panelDete
             // 
             panelDete.BackColor = SystemColors.ButtonHighlight;
-            panelDete.Location = new Point(59, 262);
+            panelDete.Location = new Point(251, 316);
             panelDete.Name = "panelDete";
             panelDete.Size = new Size(960, 450);
             panelDete.TabIndex = 3;
@@ -493,10 +492,11 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1282, 734);
+            ClientSize = new Size(1282, 773);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Controls.Add(panelDete);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(4);
             Name = "MainForm";

@@ -41,3 +41,50 @@ D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Mana
 D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Management_System.ZaposleniForma.resources
 D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Management_System.Postavke.Resources.resources
 D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Management_System.dgvZaposleniModel.resources
+D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Management_System.Kupac.resources
+D:\Car Management System\Car Management System\obj\Debug\net7.0-windows\Car_Management_System.KupacModel.resources
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Car Management System.exe
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Car Management System.deps.json
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Car Management System.runtimeconfig.json
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Car Management System.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Car Management System.pdb
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\BouncyCastle.Cryptography.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\Google.Protobuf.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\K4os.Compression.LZ4.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\K4os.Hash.xxHash.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\MySql.Data.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\System.IO.Pipelines.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\ZstdSharp.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Car Menagement System\Car Menagement System\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.csproj.AssemblyReference.cache
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.Kupac.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.KupacModel.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.MainForm.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.Podesavanja.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.Postavke.Resources.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.UpravljajCenomUsluge.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.UpravljajVozilom.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.ZaposleniForma.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car_Management_System.dgvZaposleniModel.resources
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.csproj.GenerateResource.cache
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.AssemblyInfoInputs.cache
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.AssemblyInfo.cs
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.csproj.CoreCompileInputs.cache
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.csproj.CopyComplete
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.dll
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\refint\Car Management System.dll
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.pdb
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\Car Management System.genruntimeconfig.cache
+D:\Car Menagement System\Car Menagement System\obj\Debug\net7.0-windows\ref\Car Management System.dll

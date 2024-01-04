@@ -10,13 +10,13 @@ namespace Car_Management_System
         bool provera = false;
         dbconnect dbconnect = new dbconnect();
         string naslov = "Sistem za automobile";
-        ZaposleniForma employeeForm;
+        ZaposleniForma zaposleni;
 
         public dgvZaposleniModel(ZaposleniForma form)
         {
             InitializeComponent();
             comboBoxUloga.SelectedIndex = 3; // Rola radnik je difoltna
-            employeeForm = form;
+            zaposleni = form;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -54,9 +54,9 @@ namespace Car_Management_System
                             connection.Close();
 
                             MessageBox.Show("Zaposleni je uspešno registrovan u sistem!!!", naslov);
+                            provera = false;
                             Clear();
-                            this.Close();
-                            employeeForm.ucitajZaposlene();
+                            zaposleni.ucitajZaposlene();
                         }
                     }
                 }
@@ -100,7 +100,7 @@ namespace Car_Management_System
                             MessageBox.Show("Podaci o zaposlenom su uspešno izmenjeni!", naslov);
                             Clear();
                             this.Close();
-                            employeeForm.ucitajZaposlene();
+                            zaposleni.ucitajZaposlene();
                         }
                     }
                 }
